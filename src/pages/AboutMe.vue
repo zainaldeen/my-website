@@ -11,7 +11,11 @@
       "Title":&nbsp;&nbsp; "Software Engineer and Full Stack Developer"&nbsp;,
     </div>
     <div class="max-w-6 pl-12 mb-2 text-white text-left" style="font-size: 1em">
-      "Summary": &nbsp;&nbsp; "With more than 3 years of development experience and about 2 years of management and team leading experience" &nbsp;,
+      "Summary": <pre class="text-left" >&nbsp;&nbsp;         "3 years in development, +2 years in team
+              leading and 1 year in system analysis experience, adept in bringing forth expertise in
+              design, installation, testing and maintenance of software systems. Proficient in
+              various platforms and languages. Able to effectively self-manage during independent
+              projects, as well as collaborate as part of a productive team." &nbsp;,</pre>
     </div>
     <div class="max-w-6 pl-12 mb-2 text-white text-left" style="font-size: 1em">
       "Location": &nbsp;&nbsp; "UAE, Al Sharjah"&nbsp;,

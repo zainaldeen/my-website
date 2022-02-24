@@ -50,7 +50,7 @@ export default new Router({
       component: Home,
       children: [
         {
-          path: 'me',
+          path: ':company',
           name: 'ExperiencesMe',
           component: ExperiencesMe
         },
