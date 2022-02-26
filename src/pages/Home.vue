@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="max-h-12 min-h-12 font-bold p-6 gap-x-4 head-main flex items-center">
+    <div class="max-h-11 min-h-10 font-bold p-7 gap-x-4 head-main flex items-center">
       <div class="flex justify-between w-full">
         <div class="flex gap-x-2">
-          <h4>GET</h4>
-          <span class="text-white">Success</span>
+          <h4 class="text-xs sm:text-sm">GET</h4>
+          <span class="text-white text-xs sm:text-sm">Success</span>
         </div>
-        <div><a href="mailto:zainaldeenfayod@gmail.com?subject=Ask%20For%20Services"> Just Make Your Request ;) </a></div>
+        <div class="text-xs sm:text-sm"><a href="mailto:zainaldeenfayod@gmail.com?subject=Ask%20For%20Services"> Send Me </a></div>
       </div>
     </div>
     <div v-if="is_main_path <= 2">
@@ -71,9 +71,6 @@ h4 {
   color: #ff6c37;
 }
 
-span {
-  font-size: 12px;
-}
 
 #main-image {
   height: 200px;

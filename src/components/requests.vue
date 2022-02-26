@@ -2,7 +2,7 @@
   <div class="requests pl-2 pt-2">
     <div class="flex">
       <img src="../assets/plus.svg" alt="plus">
-      <input type="text" disabled placeholder="             Some Info" class="text-" style="opacity: 0.4; width: 80%">
+      <input type="text" disabled placeholder="             Some Info" class="name-for-web" style="opacity: 0.4; width: 80%">
     </div>
     <div class="mt-2 pl-1" v-for="request in requests" :key="request.name">
        <router-link class="flex gap-x-3 " :to="`${request.path}`"><span>&gt;</span>{{ request.name }}</router-link><br>

@@ -1,30 +1,30 @@
 <template :key="comp">
   <div>
-    <div class="flex pl-5 pt-5 text-grey">GET: ZainAldeenFayod / Experiences / {{ comp }}</div>
+    <div class="flex pl-5 pt-5 text-grey text-xs sm:text-base">GET: ZainAldeenFayod / Experiences / {{ comp }}</div>
     <div class="flex pl-5 pt-5">
       <h1 style="color: #ff6c37; font-size: 2em"> {{ comp }}</h1>
     </div>
     <div class="max-w-6 pl-5 text-white text-left">
-      <h1  style="font-size: 3em">{</h1>
+      <h1 class="text-lg sm:text-5xl">{</h1>
     </div>
-    <div class="max-w-6 pl-12 mb-2 text-white text-left" style="font-size: 1em">
+    <div class="max-w-6 pl-12 mb-2 text-white text-left pr-2 text-sm sm:text-base">
       "Title":&nbsp;&nbsp; "{{ company.Title }}"&nbsp;,
     </div>
-    <div class="max-w-6 pl-12 mb-2 text-white text-left" style="font-size: 1em">
+    <div class="max-w-6 pl-12 mb-2 text-white text-left pr-2  text-sm sm:text-base">
       "Location":  "{{ company.Location}}" &nbsp;,
     </div>
-    <div  class="max-w-6 pl-12 mb-2 text-white text-left" style="font-size: 1em">
+    <div  class="max-w-6 pl-12 mb-2 text-white text-left pr-2 text-sm sm:text-base">
       "From": &nbsp;&nbsp; "{{ company.Start_Date}}"&nbsp;,
     </div>
-    <div class="max-w-6 pl-12 mb-2 text-white text-left" style="font-size: 1em">
+    <div class="max-w-6 pl-12 mb-2 text-white text-left pr-2 text-sm sm:text-base">
       "Until": &nbsp;&nbsp; "{{ company.End_Date}}" &nbsp;,
     </div>
-    <div class="max-w-6 pl-12 mb-2 text-white text-left" style="font-size: 1em">
+    <div class="max-w-6 pl-12 mb-2 text-white text-left pr-2 text-sm sm:text-base" >
       "Description": &nbsp;&nbsp; " <div v-html="company.Description"> &nbsp;</div>
     </div>
 
     <div class="max-w-6 pl-5 text-white text-left">
-      <h1  style="font-size: 3em">}</h1>
+      <h1  class="text-lg sm:text-5xl">}</h1>
     </div>
   </div>
 

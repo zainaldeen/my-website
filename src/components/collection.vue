@@ -1,13 +1,25 @@
 <template>
-  <div class="collection pl-3 pr-3 pt-2 flex flex-col">
-    <img id="collection-icon" src="../assets/collection.svg" alt="collection icon">
-    <span>Collections</span>
+  <div>
+    <div class="collection pl-3 pr-3 pt-2 flex flex-col">
+      <img id="collection-icon" src="../assets/collection.svg" alt="collection icon">
+      <span>Collections</span>
+    </div>
+    <div class="text-xs reqs-for-mobile" v-for="request in requests" :key="request.name">
+      <router-link class="flex gap-x-2 align-center p-1 " :to="`${request.path}`"><span>&gt;</span>{{ request.name }}</router-link><br>
+    </div>
   </div>
+
 </template>
 
 <script>
 export default {
-  name: "collection-component"
+  name: "collection-component",
+  props: {
+    requests:{
+      path: String,
+      name: String
+    },
+  }
 }
 </script>
 

@@ -3,3 +3,76 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.nav-for-mobile {
+    display: initial;
+}
+.reqs-for-mobile {
+    display: initial;
+}
+
+.nav-for-web {
+    display: none;
+}
+.pic-nav-for-web {
+    margin-left: 2px;
+}
+.side-for-web {
+    background-color: #292929;
+    height: 100%;
+    width: 6em;
+}
+
+.main-for-web {
+    background-color: #212121;
+    width: calc(100vw - 6em);
+}
+
+.name-for-web {
+    display: none;
+}
+
+.title-for-web{
+    display: none;
+}
+
+#my-photo {
+    display: none;
+}
+@media screen and (min-width: 920px) {
+    .nav-for-web {
+        display: initial;
+    }
+
+    .nav-for-mobile {
+        display: none;
+    }
+    .reqs-for-mobile {
+        display: none;
+    }
+
+    .side-for-web {
+        background-color: #292929;
+        height: 100%;
+        width: 23em;
+    }
+    .main-for-web {
+        background-color: #212121;
+        width: calc(100vw - 23em);
+    }
+    .name-for-web {
+        display: initial;
+    }
+    .title-for-web{
+        display: flex;
+        height: 3.3rem;
+        border-bottom: 1px solid #747474;
+    }
+    #my-photo {
+        display: initial;
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+}

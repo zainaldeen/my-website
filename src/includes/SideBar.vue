@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div id="my-name" class="max-h-10 mt-2 font-bold pl-4 pb-1 flex items-center gap-x-4">
+    <div id="my-name" class="mt-1 font-bold pl-4 pb-2 flex justify-center gap-x-4 title-for-web">
       <img id="my-photo" src="../assets/my-logo.png" alt="Me">
       <p> Zain Aldeen Fayod<br> <sub>Software Engineer and Full Stack Developer</sub></p>
     </div>
     <div class="flex gap-x-.5">
-      <CollectionComponent/>
+      <CollectionComponent :requests="requests"/>
       <RequestsComponent :requests="requests"/>
     </div>
   </div>
@@ -36,15 +36,6 @@ export default {
 <style scoped>
 div {
   color: white;
-}
-#my-name {
-  border-bottom: 1px solid #747474;
-}
-#my-photo {
-  width: 30px;
-  height: 30px;
-  border: 1px solid white;
-  border-radius: 20px;
 }
 sub {
   font-size: 10px;
